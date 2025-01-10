@@ -17,7 +17,7 @@ This is a simple and interactive calculator built with HTML, CSS and JavaScript.
 You can run the calculator on your local machine by following these steps:
 
 - Clone the repository:
-git clone https://github.com/your-username/calculator.git
+git clone https://github.com/hackhertiff/calculator.git
 
 - Navigate to the project directory:
 cd calculator
@@ -45,7 +45,7 @@ Here is a screenshot of the calculator output:
 -    |-- calculator-screenshot.png  # Screenshot of the calculator webpage
 
 ## License
-- This project is licensed under the MIT License - see the [LICENSE](License) file for details.
+- This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 - Inspired by <a href="https://learntime.net/search/">Learn Time</a>
