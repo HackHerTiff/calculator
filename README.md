@@ -34,14 +34,15 @@ You can double click on "index.html" or you can open it directly in your web bro
 
 ## Screenshot
 Here is a screenshot of the calculator output:
-
+![Calculator Screenshot](https://raw.githubusercontent.com/HackHerTiff/calculator/main/Project6.JPG)
+  
 ## File Structure 
-/calculator
-|-- index.html        # Main HTML file
-|-- style.css         # Styles for the calculator layout
-|-- script.js         # JavaScript file for calculator logic
-|-- /images           # Optional folder for assets like icons (if any)
-    |-- calculator-screenshot.png  # Screenshot of the calculator webpage
+- /calculator
+- |-- index.html        # Main HTML file
+- |-- style.css         # Styles for the calculator layout
+- |-- script.js         # JavaScript file for calculator logic
+- |-- /images           # Optional folder for assets like icons (if any)
+-    |-- calculator-screenshot.png  # Screenshot of the calculator webpage
 
 ## License
 
