@@ -45,6 +45,7 @@ Here is a screenshot of the calculator output:
 -    |-- calculator-screenshot.png  # Screenshot of the calculator webpage
 
 ## License
+- This project is licensed under the MIT License - see the [LICENSE](License) file for details.
 
 ## Acknowledgements
 - Inspired by <a href="https://learntime.net/search/">Learn Time</a>
