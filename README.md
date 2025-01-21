@@ -49,6 +49,7 @@ Here is a screenshot of the calculator output:
 
 ## Acknowledgements
 - Inspired by <a href="https://learntime.net/search/">Learn Time</a>
+- Big thanks to <a href="https://www.computerhope.com/htmcolor.htm">Computer Hope</a> for the HTML Colour codes.
 
 
 
