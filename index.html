@@ -1,48 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- This makes sure that the webpage allows special characters -->
     <meta charset="UTF-8">
-    <!-- This will make sure that the webpage is displayed correctly on different devices. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Calculator</title>
-    <!-- Link to the stylesheet file. -->
+    <title>Home - My Calculator</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <!-- This is the container that will keep the calculator and the heading. -->
-    <div class="container">
-        <!-- This is the heading. -->
-        <h1>My Calculator</h1>
-        <!-- This is the container that will be the actual calculator. -->
-        <div class="calculator">
-            <!-- This is the screen of the calculator. -->
-            <div class="display">
-                <input type="text" id="display" disabled />
-            </div>
-            <!-- These are the buttons. The append() function add the the number between the brackets to an array or list. -->
-            <div class="buttons">
-                <button class="button" onclick="appendValue('7')">7</button>
-                <button class="button" onclick="appendValue('8')">8</button>
-                <button class="button" onclick="appendValue('9')">9</button>
-                <button class="button operation" onclick="appendValue('+')">+</button>
-                <button class="button" onclick="appendValue('4')">4</button>
-                <button class="button" onclick="appendValue('5')">5</button>
-                <button class="button" onclick="appendValue('6')">6</button>
-                <button class="button operation" onclick="appendValue('-')">-</button>
-                <button class="button" onclick="appendValue('1')">1</button>
-                <button class="button" onclick="appendValue('2')">2</button>
-                <button class="button" onclick="appendValue('3')">3</button>
-                <button class="button operation" onclick="appendValue('*')">*</button>
-                <button class="button" onclick="appendValue('0')">0</button>
-                <button class="button" onclick="clearDisplay()">C</button>
-                <button class="button" onclick="appendValue('.')">.</button>
-                <button class="button operation" onclick="appendValue('/')">/</button>
-                <button class="button equal" onclick="calculateResult()">=</button>
-            </div>
-        </div>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="Index.html">
+            <img src="images/home.png" alt="Home" class="nav-icon">
+        </a>
+        <a href="calculator.html">
+            <img src="images/calculator.png" alt="Calculator" class="nav-icon">
+        </a>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            <img id="theme-icon" src="images/sun.png" alt="Theme Mode" class="nav-icon">
+        </button>
     </div>
-    <!-- Link to the javascript file. -->
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to My Calculator</h1>
+        <p>To enjoy easy and quick calculations, click on the calculator icon to open the calculator.</p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
