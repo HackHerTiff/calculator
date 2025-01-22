@@ -24,3 +24,22 @@ function calculateResult() {
         display.value = "Error";
     }
 }
+
+// Theme toggle function
+function toggleTheme() {
+    const body = document.body;
+    const themeIcon = document.getElementById("theme-icon");
+
+    if (body.classList.contains("light-mode")) {
+        body.classList.remove("light-mode");
+        body.classList.add("dark-mode");
+        themeIcon.src = "images/moon.png"; // Switch to moon icon in dark mode
+    } else {
+        body.classList.remove("dark-mode");
+        body.classList.add("light-mode");
+        themeIcon.src = "images/sun.png"; // Switch to sun icon in light mode
+    }
+}
+
+// Set initial theme to light mode
+document.body.classList.add("light-mode");
