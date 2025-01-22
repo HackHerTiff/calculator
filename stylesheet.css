@@ -1,33 +1,94 @@
 body {
-  background: linear-gradient(135deg, #b09dff, #ffbbf9, #c9a7ff); 
-  font-family: Arial, sans-serif; 
+  font-family: Arial, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style: none; 
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  color: black;
+  flex-direction: column;
 }
 
 h1 {
   text-align: center;
   font-size: 3em;
-  color: white;
   margin-bottom: 20px;
+  transition: color 0.3s ease;
 }
 
-.calculator-container {
+.container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  flex-direction: column;
+  height: 100vh;
 }
 
+.navbar {
+  position: fixed;
+  top: 1rem; /* Space from top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; /* Reduced gap between icons */
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+  backdrop-filter: blur(8px); /* Blur effect for background */
+  border: 1px solid black;
+  border-radius: 3rem;
+  z-index: 1000;
+}
+
+.navbar a, .navbar button {
+  text-decoration: none;
+}
+
+.nav-icon {
+  width: 40px; /* Increased icon size */
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar a:hover .nav-icon, .navbar button:hover .nav-icon {
+  transform: scale(1.3); /* Enlarge on hover */
+  filter: brightness(0) saturate(100%) invert(48%) sepia(80%) saturate(220%) hue-rotate(249deg) brightness(104%) contrast(101%);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  background-color: transparent;
+}
+
+/* Light Mode and Dark Mode styles */
+body.light-mode {
+  background: linear-gradient(135deg, #b09dff, #ffbbf9, #c9a7ff); 
+  color: black;
+}
+
+body.dark-mode {
+  background: linear-gradient(135deg, #2a2a6d, #7a4d94, #2b4d9b);
+  color: white;
+}
+
+/* Calculator styles */
 .calculator {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 6rem; /* Added space between navbar and calculator */
 }
 
 .display {
@@ -66,19 +127,63 @@ h1 {
   background-color: #f1f1f1;
 }
 
+body.light-mode .equal:hover {
+  background-color: #6a1b9a; /* Dark purple hover for equal button in light mode */
+}
+
+/* Light Mode equal (=) button */
+body.light-mode .equal {
+  color: black; /* Equal button text black in light mode */
+}
+
+/* Operation buttons */
 .operation {
-  background-color: #b666d2;  
+  background-color: #b666d2;
   color: white;
 }
 
 .operation:hover {
-  background-color: #f1f1f1; 
+  background-color: #6a1b9a;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .calculator {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background */
+}
+
+/* Dark mode display styles */
+body.dark-mode #display {
+  background-color: black; /* Black background for dark mode */
+  color: white; /* White text in dark mode */
+}
+
+body.dark-mode .button {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .button:hover {
+  background-color: #333;
+}
+
+/* Dark mode operation buttons */
+body.dark-mode .operation {
+  background-color: #9d4edd; /* Purple for operation buttons */
+  color: black;
+}
+
+body.dark-mode .operation:hover {
+  background-color: #5a189a;
+}
+
+body.dark-mode .equal:hover {
+  background-color: #5a189a; /* Dark purple hover for equal button in light mode */
 }
 
 .equal {
-  background-color: #b666d2;
-  color: white;
-  grid-column: span 2; 
+  background-color: white;
+  color: black;
+  grid-column: span 2;
   font-size: 24px;
 }
 
@@ -88,4 +193,9 @@ h1 {
 
 button:active {
   transform: scale(0.98);
+}
+
+/* Theme transition for body and elements */
+body, .calculator, .button, .operation, .theme-toggle {
+  transition: all 0.3s ease;
 }
