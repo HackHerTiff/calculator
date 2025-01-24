@@ -1,55 +1,68 @@
 # Calculator
 
-This is a simple and interactive calculator built with HTML, CSS and JavaScript. This project demonstrates basic web development techniques and allows users to perform arithmetic operations (+,-,*,/).
+This is a simple and interactive calculator built with HTML, CSS, and JavaScript. The calculator offers a user-friendly interface with light and dark mode themes, making it visually appealing and easy to use. This project demonstrates basic web development techniques and allows users to perform arithmetic operations (+, -, *, /), along with additional features like theme toggling.
 
-## Features 
-- Basic arithmetic operations: addition, substraction, multiplication and division.
-- Clear button to reset the screen.
-- User-friendly interface with a responsive design.
-- Real time calculation without page reload.
+## Features
+- Basic arithmetic operations: addition, subtraction, multiplication, and division.
+- Clear button (C) to reset the screen.
+- Real-time calculation without page reload.
+- Light and dark mode themes for a customizable user experience.
+- Theme toggle button to switch between light and dark modes.
+- Responsive and modern design for an optimized user experience.
 
 ## Technologies Used
-- HTML: For the structure and layout of the webpage.
-- CSS: To style the interface and ensures responsiveness.
-- JavaScript: Handles the logic and interactions, performs calculations based on user input.
+- **HTML**: For the structure and layout of the webpage.
+- **CSS**: To style the interface and ensure responsiveness, including light and dark mode styles.
+- **JavaScript**: Handles the logic and interactions, performs calculations, and manages theme toggling based on user input.
 
 ## Installation
+
 You can run the calculator on your local machine by following these steps:
 
-- Clone the repository:
-git clone https://github.com/hackhertiff/calculator.git
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hackhertiff/calculator.git
+   ```
 
-- Navigate to the project directory:
-cd calculator
+2. Navigate to the project directory:
+   ```bash
+   cd calculator
+   ```
 
-- Open index.html in your browser.
-You can double click on "index.html" or you can open it directly in your web browser to use the calculator.
+3. Open `index.html` in your browser. You can double-click on `index.html` or open it directly in your web browser to use the calculator.
 
-## Usuage
+## Usage
 - Enter numbers using the number buttons (0-9).
-- Select the arithmetic operation (+,-,*,/).
-- Press (=) to calculate the result.
-- Use the (C) button, which is the clear button to reset the display to 0.
+- Select the arithmetic operation (+, -, *, /).
+- Press the (=) button to calculate the result.
+- Use the (C) button, the clear button, to reset the display to 0.
 - The calculator handles multiple operations in sequence, updating the result as you go.
+- Toggle between **light** and **dark mode** by clicking the theme button on the navigation bar.
 
-## Screenshot
-Here is a screenshot of the calculator output:
-![Calculator Screenshot](https://raw.githubusercontent.com/HackHerTiff/calculator/main/Project6.JPG)
-  
-## File Structure 
-- /calculator
-- |-- index.html        # Main HTML file
-- |-- style.css         # Styles for the calculator layout
-- |-- script.js         # JavaScript file for calculator logic
-- |-- /images           # Optional folder for assets like icons (if any)
--    |-- calculator-screenshot.png  # Screenshot of the calculator webpage
+## Live Demo
+
+You can view and try the live version of the calculator here:
+
+[Live Demo](https://hackhertiff.github.io/calculator/)
+
+## File Structure
+
+```
+/calculator
+  |-- index.html        # Main HTML file
+  |-- stylesheet.css    # Styles for the calculator layout
+  |-- script.js         # JavaScript file for calculator logic and theme toggling
+  |-- /images           # Folder for assets like icons
+      |-- home.png      # Home icon for navigation
+      |-- calculator.png # Calculator icon for navigation
+      |-- sun.png       # Sun icon for light mode
+      |-- moon.png      # Moon icon for dark mode
+```
 
 ## License
-- This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 - Inspired by <a href="https://learntime.net/search/">Learn Time</a>
-- Big thanks to <a href="https://www.computerhope.com/htmcolor.htm">Computer Hope</a> for the HTML Colour codes.
-
-
-
+- Special thanks to <a href="https://www.computerhope.com/htmcolor.htm">Computer Hope</a> for the HTML color codes.
